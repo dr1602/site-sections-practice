@@ -110,7 +110,7 @@
                 <input type="password" id="password" placeholder="*********" class="input input-password">
             </form>
 
-            <button class="primary-button signup-button">Save</button>
+            <button class="primary-button signup-button">Create</button>
 
     </div>
 </body>

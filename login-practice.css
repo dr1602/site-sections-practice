@@ -5,11 +5,15 @@
     font-family: 'poppins', sans-serif;
 }
 
+:root{
+    --white: #FFFFFF;
+}
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /*1920px*/
     width: 100%;
 
     background: url(https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_1280.jpg)no-repeat;
@@ -22,7 +26,7 @@ section{
     width: 400px;
     height: 450px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid #FFFFFF7F;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     display: flex;
@@ -31,8 +35,8 @@ section{
 }
 
 h2{
-    font-size: 2em;
-    color: #ffffff;
+    font-size: 2em; /*32px*/
+    color: var(--white);
     text-align: center;
 }
 
@@ -40,7 +44,7 @@ h2{
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid var(--white);
 }
 
 .inputbox label{
@@ -49,7 +53,7 @@ h2{
     left: 5px;
     transform: translateY(-50%);
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1em; /*16px*/
     pointer-events: none;
     transition: .5s;
 }
@@ -65,15 +69,15 @@ input:valid ~ label{
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1em; /*16px*/
     padding: 0 35px 0 5px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
-    color: #ffffff;
+    color: var(--white);
     font-size: 1.2em;
     top: 20px;
 }
@@ -81,7 +85,7 @@ input:valid ~ label{
 .forget{
     margin: -15px 0 15px;
     font-size: .9em;
-    color: #ffffff;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
 }
@@ -91,7 +95,7 @@ input:valid ~ label{
 }
 
 .forget label a{
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -103,7 +107,7 @@ button{
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #ffffff;
+    background: var(--white);
     border: none;
     outline: none;
     cursor: pointer;
@@ -113,14 +117,14 @@ button{
 
 .register{
     font-size: .9em;
-    color: #ffffff;
+    color: #var(--white);
     text-align: center;
     margin: 25px 0 10px;
 }
 
 .register p a{
     text-decoration: none;
-    color: #ffffff;
+    color: #var(--white);
     font-weight: 600;
 }
 

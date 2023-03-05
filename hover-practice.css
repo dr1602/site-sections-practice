@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-purple: #7F00B2;
+    --med-purple: #8E22BB;
+    --light-purple: #AB49CC;
+    --med-pink: #FF0077;
+    --light-pink:#FF3885;
+    --med-green:#77DD77;
+    --light-green:#A9E9A4;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--dark-purple);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, transparent, #000000);
+}
+
+.box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg,var(--med-pink) 25%, var(--med-purple) 25%, var(--med-purple) 50%, var(--med-pink) 50%, var(--med-pink) 75%,  var(--med-purple) 75%,  var(--med-purple) 100%);
+    background-size: 40px 40px;
+    filter: sepia(.45);
+    animation: animateBg 0.5s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+    display: flex;
+    justify-content: center;
+}
+
+.box:nth-child(2){
+    background: linear-gradient(135deg,var(--med-green) 25%, var(--med-purple) 25%, var(--med-purple) 50%, var(--med-green) 50%, var(--med-green) 75%,  var(--med-purple) 75%,  var(--med-purple) 100%);
+    background-size: 40px 40px;
+}
+
+.box:hover{
+    animation-play-state: running;
+    filter: sepia(0);
+}
+
+@keyframes animateBg {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 40px;
+    }
+}
+
+.box img{
+    position: absolute;
+    bottom: 0;
+    height: 360px;
+    width: 288px;
+    transition: height 0.5s;
+}
+
+.box:hover img{
+    height: 480px;
+    width: 408px;
+}
